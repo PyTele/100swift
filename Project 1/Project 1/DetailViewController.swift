@@ -18,6 +18,7 @@ class DetailViewController: UIViewController {
         title = selectedImage
 //        navigationItem.largeTitleDisplayMode = .never
 //        this could be used but i preffer the large title
+        
 
         if let imageToLoad = selectedImage {
             imageView.image = UIImage(named: imageToLoad)
@@ -43,3 +44,5 @@ class DetailViewController: UIViewController {
     */
 
 }
+
+

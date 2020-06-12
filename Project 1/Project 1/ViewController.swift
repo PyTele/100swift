@@ -20,8 +20,8 @@ override func viewDidLoad() {
     
 let fm = FileManager.default
 let path = Bundle.main.resourcePath!
-let items = try!fm.contentsOfDirectory(atPath: path)
-
+    let items = try!fm.contentsOfDirectory(atPath: path).sorted()
+    
 for item in items {
     if item.hasPrefix("nssl") {
         // this is a picture to load!
@@ -46,4 +46,7 @@ print(pictures)
             navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
 }
+
+
